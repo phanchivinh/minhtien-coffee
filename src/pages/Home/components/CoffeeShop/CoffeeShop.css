@@ -1,0 +1,132 @@
+.coffeeShop__wrapper {
+    /* padding-top: 30px; */
+}
+
+.coffeeShop__into {
+    padding: 20px 0 40px;
+}
+
+.coffeeShop__into-counter {
+    display: grid;
+    grid-template-areas: 'left right desc';
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-gap: 60px;
+}
+
+.coffeeShop__into-counter h6 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 450;
+    letter-spacing: 0.01em;
+}
+
+.coffeeShop__into-description {
+    /* font-size: 18px; */
+}
+
+.coffeeShop__into-description .readmore-link {
+    margin-top: 25px;
+}
+
+.coffeeShop__slider {
+    overflow: hidden;
+}
+
+.coffeeShop__slide {
+    display: grid;
+    grid-template-areas: "image text"
+                        "image bottom";
+    grid-template-columns: 50% 50%;
+    opacity: 0;
+    transition: opacity 500ms ease;
+}
+
+.coffeeShop__slider-list {
+    display: flex;
+}
+
+.coffeeShop__slide img {
+    background-color: var(--main-site-background);
+    width: 100%;
+    height: 100%;
+}
+
+.coffeeShop__slide-quote {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.coffeeShop__slide-text {
+    grid-area: text;
+    padding: 45px 45px 0;
+    font-size: 24px;
+    text-align: left;
+}
+
+.coffeeShop__slide-image {
+    grid-area: image;
+}
+
+.coffeeShop__slide-bottom {
+    grid-area: bottom;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 100px;
+    padding: 0 45px 45px;
+    line-height: 1.4;
+}
+
+.coffeeShop__slide.show {
+    opacity: 1;
+}
+
+@media screen and (min-width: 1200px) {
+    .coffeeShop__wrapper {
+        padding: 105px 200px 60px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .coffeeShop__into-counter {
+        padding: 0 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .coffeeShop__into {
+        padding: 60px 20px 40px;
+    }
+
+    .coffeeShop__into-counter {
+        padding: 0;
+        display: grid;
+        grid-template-areas:
+                        "left right"
+                        "desc desc";
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0;
+    }
+
+    .coffeeShop__into-right {
+        text-align: right;
+    }
+
+    .coffeeShop__into-description {
+        margin-top: 1.2em;
+        grid-column: 1 / 3;
+    }
+
+    .coffeeShop__slide {
+        display: grid;
+        grid-template-areas: 
+                "image"
+                "text"
+                "bottom";
+        grid-template-columns: 100%;
+        grid-template-rows: 4fr 2fr 1fr;
+    }
+
+    .coffeeShop__slide-bottom {
+        font-size: 14px;
+    }
+}

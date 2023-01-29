@@ -1,0 +1,80 @@
+.manufactureProcess__wrapper {
+    padding:120px 60px 175px 200px;
+    display: flex;
+    column-gap: 90px;
+}
+
+.manufactureProcess__wrapper h4 {
+    flex: 1;
+    color: var(--main-site-coffee-color);
+    font-size: 4.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.manufactureProcess__content {
+    flex: 2;
+}
+
+.manufactureProcess__content-item input {
+    display: none;
+}
+
+.manufactureProcess__content-heading {
+    font-size: 2.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--main-site-coffee-color);
+    border-bottom: 1px solid var(--main-light-color);
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.manufactureProcess__content-text {
+    display: none;
+}
+
+.manufactureProcess__content-item input:checked ~ .manufactureProcess__content-text {
+    display: block;
+}
+
+.manufactureProcess__content-text p {
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width:1024px) {
+    .manufactureProcess__wrapper {
+        padding: 70px 30px 65px 40px;
+    }
+
+    .manufactureProcess__wrapper h4 {
+        font-size: 2.8rem;
+    }
+
+    .manufactureProcess__content-heading {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .manufactureProcess__wrapper {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .manufactureProcess__wrapper h4 {
+        font-size: 2.4rem;
+        margin-bottom: 20px;
+    }
+
+    .manufactureProcess__content-heading {
+        font-size: 2rem;
+    }
+
+    .manufactureProcess__content-text p {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+}

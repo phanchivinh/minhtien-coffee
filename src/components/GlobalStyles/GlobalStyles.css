@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,700;1,900&display=swap');
+
+:root {
+    --main-site-background: #076836;
+    --main-second-site-background: #2c2b2a;
+    --main-site-coffee-color: #503629;
+    --main-light-color: #d4ca9f;
+    --main-gray-light: #fafafa;
+    --main-text-color: #2d2c2c;
+    --main-single-color: #ef4136;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* outline: 1px solid red; */
+}
+
+html {
+    line-height: 1.4;
+    font-size: 62.5%;
+    height: 100%;
+}
+
+html::-webkit-scrollbar {
+    border-radius: 0px;
+    width: 8px;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(173, 170, 170, 0.63);
+}
+
+html ::-webkit-scrollbar-track {
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.6rem;
+    text-rendering: optimizeSpeed;
+    min-height: 500px;
+    background-color: #fff;
+    overflow-y: overlay;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    color: var(--main-text-color);
+}
+
+.section-block {
+    padding-top: 20px;
+}
+
+.green-background {
+    background-color: var(--main-site-background);
+    color: #fff;
+}
+
+.section-heading {
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    color: var(--main-text-color);
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.section-heading::before,
+.section-heading::after {
+    content: "";
+    border-top: 1px solid var(--main-light-color);
+    margin: 0 20px 0 0;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 20px;
+    flex: 1 0 20px;
+}
+
+.section-heading:after {
+    margin: 0 0 0 20px;
+}
+
+.readmore-link {
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.readmore-link::before {
+    content: " ";
+    width: 25px;
+    height: 1px;
+    display: inline-block;
+    margin-right: 12px;
+    background: var(--main-light-color);
+}

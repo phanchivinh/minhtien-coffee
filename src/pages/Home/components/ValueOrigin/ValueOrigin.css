@@ -1,0 +1,140 @@
+.valueOrgin__wrapper {
+    padding: 90px 0 30px 160px;
+    display: flex;
+    flex-flow: nowrap;
+    width: 100%;
+}
+
+.valueOrgin__wrapper h4 {
+    font-size: 36px;
+    color: var(--main-site-background);
+    letter-spacing: 0.01em;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.valueOrigin__dots {
+    display: block;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    transition: top 0.5s ease ;
+    z-index: 4;
+}
+
+.active-slider {
+    color: var(--main-site-background) !important;
+    text-shadow: none !important;
+}
+
+.valueOrigin__dots a {
+    font-size: 62px;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    color: #fff;
+    text-shadow: -1px 0 #000, 0 -1px #000, 1px 0 #000, 0 1px #000;
+    cursor: pointer;
+}
+
+    
+.valueOrigin__slider {
+    width: 100%;
+    display: block;
+}
+
+.valueOrigin__item {
+    width: 100%;
+}
+
+.valueOrigin__item article {
+    width: 100%;
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-gap: 110px;
+}
+
+.valueOrigin__item article>div {
+    padding-left: 115px;
+    letter-spacing: 0.01em;
+}
+
+.valueOrigin__item article img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1024px) {
+    .valueOrgin__wrapper {
+        padding: 90px 0 30px 30px;
+    }
+
+    .valueOrigin__item article {
+        grid-gap: 25px;
+    }
+
+    .valueOrigin__item article>div {
+        padding-left: 35px;
+    }
+
+    .valueOrgin__wrapper h4 {
+        font-size: 24px;
+    }
+
+    .valueOrigin__dots a{
+        font-size: 37px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .valueOrgin__wrapper{
+        display: flex;
+        flex-direction: column;
+        padding: 35px 20px 75px;
+    }
+
+    /* .valueOrigin__slider {
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+         width: 400%;
+    }
+
+    .valueOrigin__item {
+        width: 25%;
+        position: absolute;
+    } */
+
+    .valueOrigin__dots {
+        flex-direction: row;
+        display: flex;
+        top: auto !important;
+        position: relative;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .valueOrigin__dots a {
+        font-size: 53px;
+    }
+
+    .valueOrigin__item article {
+        display: flex;
+        grid-gap: 0;
+        flex-direction: column-reverse;
+    }
+
+    .valueOrigin__item article img {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .valueOrigin__item article>div {
+        padding-left: 0;
+    }
+
+    .valueOrigin__item article p {
+        font-size: 1.4rem;
+    }
+}

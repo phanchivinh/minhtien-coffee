@@ -1,0 +1,64 @@
+.journey {
+    background-position: 100% 0;
+    background-color: transparent;
+    background-size: cover;
+}
+
+.journey__wrapper {
+    padding: 120px 70px 275px 250px;
+    text-align: left;
+}
+
+.journey__title {
+    margin-bottom: 120px;
+}
+
+.journey__title h6 {
+    color: var(--main-light-color);
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.journey__content {
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 35px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.journey__content .readmore-link {
+    margin-bottom: 12px;
+}
+
+.journey__readmore a {
+    color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+    .journey__wrapper {
+        padding: 90px 100px;
+    }
+
+    .journey__content {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .journey__wrapper {
+        padding: 75px 20px 145px;
+    }
+
+    .journey__content {
+        grid-row-gap: 50px;
+    }
+
+    .journey__content article {
+        font-size: 14px;
+    }
+}

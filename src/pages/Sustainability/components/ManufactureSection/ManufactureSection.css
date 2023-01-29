@@ -1,0 +1,38 @@
+.manufactureSection__wrapper {
+    padding: 130px 160px 150px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 130px;
+}
+
+.manufactureSection_image {
+    width: 100%;
+}
+
+.manufactureSection_image img {
+    width: 100%;
+}
+
+.manufactureSection__text p {
+    color: var(--main-text-color);
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .manufactureSection__wrapper {
+        padding: 30px 40px 70px 70px;
+        grid-template-columns: 1.25fr 1.75fr;
+        grid-gap: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .manufactureSection__wrapper {
+        padding: 30px 20px 95px;
+        grid-template-columns: 1fr;
+    }
+
+    .manufactureSection__text p {
+        font-size: 1.4rem;
+    }
+}

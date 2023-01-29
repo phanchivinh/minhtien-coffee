@@ -1,0 +1,60 @@
+.video-intro {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+
+.mask-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.video-intro video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    overflow-clip-margin: content-box;  
+    overflow: clip;
+}
+
+.video-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 4;
+}
+
+.video-content h5 {
+    font-size: 4.2rem;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+
+.video-content span {
+    width: 45px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .video-content h5 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .video-content h5 {
+        font-size: 2rem;
+    }
+}

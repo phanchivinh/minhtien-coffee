@@ -1,0 +1,38 @@
+.fact {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.fact * {
+    /* outline: 1px solid red; */
+}
+
+.Typewriter{
+    width: 100%;
+    height: 50px;
+    margin: 50px 0;
+    text-align: center;
+    position: relative;
+}
+
+.Typewriter span{
+    font-size: 1.8rem;
+    width: auto;
+    display: inline-block;
+    z-index: 3;
+    color: white;
+    padding: 0 20px 0 20px;
+    position: relative;
+    background-color: var(--main-site-background);
+    margin: 0;
+}
+
+.Typewriter::after {
+    content: '';
+    width: 100%;
+    border-bottom: solid 1px var(--main-light-color);
+    position: absolute;
+    left: 0;
+    top: 20%;
+    z-index: 1;
+}

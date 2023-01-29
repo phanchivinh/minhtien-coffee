@@ -1,0 +1,32 @@
+.patchDrawing {
+    height: 960px;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+
+.drawing-container {
+    /* width: 100%; */
+    max-width: 100%;
+    display: block;
+    position: absolute;
+    left: 51%;
+    transform: translateX(-51%) rotate(180deg);
+    pointer-events: none;
+    transition: opacity .15s ease 0s;
+    z-index: 4;
+}
+
+.home-path {
+    fill: none;
+    stroke: #b9b084;
+    stroke-width: 3;
+    stroke-miterlimit: 8;
+    transition: stroke-dashoffset 0.3s ease 0s;
+}
+
+svg {
+    max-height: calc(960px + 30vh);
+    height: 100%;
+    overflow: visible;
+}

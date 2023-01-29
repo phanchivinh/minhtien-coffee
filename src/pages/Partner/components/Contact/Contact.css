@@ -1,0 +1,105 @@
+.contact__wrapper {
+    padding: 70px 95px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 75px;
+}
+
+.contact__text h4 {
+    color: var(--main-site-coffee-color);
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+
+.contact__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px 55px;
+}
+
+.contact__form .full-row-grid {
+    grid-column: 1/3;
+}
+
+.contact__form input {
+    border: none;
+    border-bottom: 1px solid var(--main-light-color);
+    color: var(--main-site-coffee-color);
+    font-size: 1.6rem;
+    margin-top: 15px;
+    padding: 5px 5px 3px;
+    display: block;
+    width: 100%;
+}
+
+.contact__form .contact__form-submitBtn {
+    background-color: #fff;
+    border: 1px solid var(--main-site-coffee-color);
+    color: var(--main-site-coffee-color);
+    font-size: 2.2rem;
+    padding: 20px;
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.contact__form-submitBtn:hover {
+    background-color: var(--main-light-color);
+}
+
+.contact__form .contact__form-error {
+    color: brown;
+    display: block;
+    font-weight: 400;
+    height: 20px;
+}
+
+.contact__form-successMsg {
+    display: block;
+    grid-column: 1/3;
+    font-size: 2.4rem;
+    color: var(--main-site-background);
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1024px) {
+    .contact__wrapper {
+        padding: 70px 93px;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .contact__form .contact__form-submitBtn {
+        grid-column: 1/3;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact__wrapper {
+        padding: 20px;
+    }
+
+    .contact__text h4 {
+        font-size: 2.8rem;
+    }
+
+    .contact__form {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .contact__form input {
+        font-size: 1.4rem;
+    }
+
+    .contact__form .contact__form-submitBtn {
+        font-size: 1.6rem;
+        font-weight: 600;
+        padding: 10px 20px;
+    }
+
+    .contact__form-successMsg {
+        font-size: 2rem;
+    }
+}

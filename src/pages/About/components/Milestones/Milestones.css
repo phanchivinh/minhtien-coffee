@@ -1,0 +1,137 @@
+.milestones__wrapper {
+    padding: 65px 375px 140px 0;
+    display: flex;
+    position: relative;
+}
+
+.milestones__times {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.milestones__times-container {
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    overflow: hidden;
+}
+
+.milestone-arrow {
+    /* position: absolute; */
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.milestone-arrow::after {
+    content: "";
+    display: block;
+    background-image: url(../../../../assets/images/arrow-slider.svg);
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 19px;
+}
+
+.milestones__upBtn {
+    /* left: 15%; */
+    transform: rotate(90deg);
+}
+
+.milestones__downBtn {
+    /* bottom: 100px;
+    left: 220px; */
+    transform: rotate(-90deg);
+}
+
+.milestones__times span {
+    font-size: 5.8rem;
+    font-weight: 500;
+    color: #d8d8d8;
+    margin-bottom: 35px;
+    cursor: pointer;
+    transform: translateY(0);
+    transition: transform 0.5s ease;
+}
+
+.milestones__times .active {
+    color: var(--main-site-background);
+}
+
+.milestones__event {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--main-site-background);
+    text-align: left;
+}
+
+.milestones__event h4 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.milestones__event h5 {
+    font-size: 2rem;
+    margin-top: 23px;
+    margin-bottom: 30px;
+}
+
+.milestones__event-content {
+    position: relative;
+    color: #000;
+}
+
+.milestones__event-content p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.milestones__event-content .active {
+    opacity: 1;
+}
+
+@media screen and (max-width: 1024px) {
+    .milestones__wrapper {
+        padding: 95px 75px 0 145px;
+        justify-content: space-between;
+    }
+
+    .milestones__times {
+        width: 20%;
+    }
+
+    .milestones__event {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .milestones__wrapper{
+        padding: 65px 20px;
+    }
+
+    .milestones__times {
+        width: 30%;
+    }
+
+    .milestones__times span {
+        font-size: 4rem;
+    }
+
+    .milestones__event h4,
+    .milestones__event h5{
+        font-weight: 400;
+    } 
+
+    .milestones__event p {
+        font-size: 1.4rem;
+    }
+}

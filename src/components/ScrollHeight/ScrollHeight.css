@@ -1,0 +1,42 @@
+.scrollHeight {
+    position: fixed;
+    top: 151px;
+    left: 0;
+    padding: 5px 5px 5px 0px;
+    height: calc(100vh - 215px);
+    line-height: 1;
+    color: var(--main-light-color);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.scrollHeight>div {
+    /* font-size: 23px; */
+
+}
+
+.scrollHeight>div::before {
+    content: ' ';
+    height: 16px;
+    width: 45px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.scrollHeight :nth-child(2n)::before {
+    border-bottom: 1px solid var(--main-light-color);
+    transform: translateY(-50%);
+}
+
+/* .scrollHeight :nth-child(7)::before {
+    border-bottom: 1px solid var(--main-light-color);
+    transform: translateY(-50%);
+} */
+
+@media screen and (max-width:768px) {
+    .scrollHeight {
+        display: none;
+    }
+}

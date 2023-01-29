@@ -1,0 +1,122 @@
+.farmHousehold__wrapper {
+    padding: 125px 100px 90px 145px;
+}
+
+.farmHousehold__passion {
+    display: grid;
+    grid-template-columns: 1fr 35%;
+    grid-gap: 145px;
+    margin-bottom: 60px;
+}
+
+.farmHousehold__passion img {
+    width: 100%;
+    height: auto;
+}
+
+.farmHousehold__passion-text h4 {
+    font-size: 2.6rem;
+    color: var(--main-site-background);
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.farmHousehold__passion-text .readmore-link {
+    display: flex;
+    justify-content: center;
+}
+
+.farmHousehold__benefit {
+    display: flex;
+}
+
+.farmHousehold__benefit h4 {
+    flex: 1;
+    font-size: 2.6rem;
+    color: var(--main-site-background);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.farmHousehold__benefit-text {
+    flex: 4;
+}
+
+.farmHousehold__benefit-text-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 50px;
+    /* grid-gap: 150px; */
+}
+
+.farmHousehold__benefit-text-item_header {
+    display: flex;
+    align-items: center;
+    color: var(--main-text-color);
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+.farmHousehold__benefit-text-item_header::before {
+    content: '';
+    background-color: var(--main-light-color);
+    display: block;
+    width: 25px;
+    height: 1px;
+    margin-right: 12px;
+}
+
+.farmHousehold__benefit-text-item p {
+    margin-bottom: 20px;
+    color: var(--main-text-color);
+}
+
+@media screen and (max-width: 1024px) {
+    .farmHousehold__wrapper {
+        padding: 75px 65px 50px;
+    }
+
+    .farmHousehold__passion {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+    }
+
+    .farmHousehold__benefit {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .farmHousehold__wrapper {
+        padding: 20px;
+    }
+
+    .farmHousehold__passion {
+        grid-template-columns: 1fr;
+    }
+
+    .farmHousehold__passion-text h4 {
+        font-size: 2rem;
+    }
+
+    .farmHousehold__benefit h4 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .farmHousehold__benefit-text-item {
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        margin-bottom: 30px;
+    }
+
+    .farmHousehold__benefit-text-item_header {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .farmHousehold__benefit-text-item p {
+        font-size: 1.4rem;
+    }
+}
