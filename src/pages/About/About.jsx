@@ -12,7 +12,7 @@ const About = () => {
 
   return (
     <div className='about'>
-        <VideoIntro videoSrc={videos.videoMinhTien1} text={`Theo chân chúng tôi \n đi tìm hạnh phúc từ hạt cà phê`}/>
+        <VideoIntro videoSrc={videos.videoMinhTien1} text={`Theo chân chúng tôi đi tìm hạnh phúc từ hạt cà phê`}/>
         <Story />
         <Journey />
         <Milestones />
